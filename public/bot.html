@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5ZHFSF72J');
+</script>
+    <title>GetTechno | ChatGPT</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.PNG">
+                </span>
+                <div class="text logo-text">
+                    <span class="name">GetTechno 2</span>
+                    <span class="profession">Unblock The WEB</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i onclick="sidebar.classList.toggle('close');" class='bx bx-search icon'></i>
+                    <div class="search">
+                    <form>
+                        <input id="searchInput" class="input-bar" placeholder="Recherche...">
+                    </form>
+                </div>
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="menu.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Accueil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="games.html">
+                            <i class='bx bx-joystick icon' ></i>
+                            <span class="text nav-text">Jeux</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="apps.html">
+                            <i class='bx bxs-grid icon'></i>
+                            <span class="text nav-text">Apps</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cloud.html">
+                            <i class='bx bx-cloud icon' ></i>
+                            <span class="text nav-text">Cloud</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tchat.html">
+                            <i class='bx bx-chat icon'></i>
+                            <span class="text nav-text">Tchat</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./bot.html" class="hover">
+                            <i class='bx bx-bot icon'></i>
+                            <span class="text nav-text">ChatGPT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                
+                
+                <li class="nav-link">
+                    <a href="info.html">
+                        <i class='bx bx-info-circle icon'></i>
+                        <span class="text nav-text">Infos</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="settings.html">
+                        <i class='bx bx-cog icon' ></i>
+                        <span class="text nav-text">Paramètres</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="calculatrice.html">
+                        <i class='bx bx-exit icon' ></i>
+                        <span class="text nav-text">Sortir</span>
+                    </a>
+                </li>
+        
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <iframe class="widgetbot" id="tchat" src="https://chat.autoai.site/"></iframe>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./uv/uv.bundle.js"></script>
+    <script src="./uv/uv.config.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        if (localStorage.getItem("theme")===null){
+            localStorage.setItem("theme", "light")
+        }
+        document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
+        toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+    </script>
+</body>
+</html>

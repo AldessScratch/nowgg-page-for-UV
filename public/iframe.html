@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <link rel="prefetch" href="./calculatrice.html" />
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5ZHFSF72J');
+</script>
+    <title>GetTechno | Iframe page</title> 
+</head>
+<body>
+    <div class="topnav">
+        <div class="left">
+            <i onclick="history.back()" class='bx bx-chevron-left'></i>
+            <i onclick="history.forward()" class="bx bx-chevron-right"></i>
+            <i onclick="window.location.href = './iframe.html'" class='bx bx-refresh medium'></i>
+            <i onclick="window.location.href = './menu.html'" class='bx bx-home-alt small'></i>
+            <img id="imageapp" src="">
+            <p id="appname">App</p>
+        </div>
+        <div class="right">
+            <i onclick="document.getElementById('iframeurl').contentWindow.location.reload(true);" class='bx bx-refresh medium'></i>
+            <a href="" id="external"><i class='bx bx-link-external small'></i></a>
+            <i onclick="window.location.href = './settings.html'" class='bx bx-cog small' ></i>
+            <i onclick="window.location.href = './calculatrice.html'" class='bx bx-exit small'></i>
+        </div>
+        <script>
+            document.getElementById("appname").innerHTML = (localStorage.getItem('appname'))
+            document.getElementById("external").href=(localStorage.getItem('iframeurl'))
+            document.getElementById("imageapp").src=(localStorage.getItem('image'))
+        </script>
+    </div>
+    <div class="iframe">
+        <iframe id="iframeurl" src="" style="border: 0; height: calc(100vh - 50px); left: 0; position: absolute; top: 0; width: 100%; bottom: 0; margin-top: 50px;"></iframe>
+        <script>
+            document.getElementById("iframeurl").src=(localStorage.getItem('iframeurl'))
+            
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async>
+            if (localStorage.getItem('chatpos')==="topright"){
+                const discord = new Crate({
+                server: '1086990232349581434',
+                channel: '1087008199363805345',
+                glyph: ['./img/widgetbot.png', '100%'],
+                location: [50, -150],
+                username: localStorage.getItem('nickname'),
+                
+                
+                })
+
+                
+
+            
+            }else{
+                if (localStorage.getItem('chatpos')==="bottomright"){
+                const discord = new Crate({
+                server: '1086990232349581434',
+                channel: '1087008199363805345',
+                glyph: ['./img/widgetbot.png', '100%'],
+                location: [200, -10],
+                username: localStorage.getItem('nickname')
+                })
+            }else{
+                if (localStorage.getItem('chatpos')==="topleft"){
+                const discord = new Crate({
+                server: '1086990232349581434',
+                channel: '1087008199363805345',
+                glyph: ['./img/widgetbot.png', '100%'],
+                location: [50, 150],
+                username: localStorage.getItem('nickname')
+                })
+            }else{
+                if (localStorage.getItem('chatpos')==="bottomleft"){
+                const discord = new Crate({
+                server: '1086990232349581434',
+                channel: '1087008199363805345',
+                glyph: ['./img/widgetbot.png', '100%'],
+                location: [200, 10],
+                username: localStorage.getItem('nickname')
+                })
+            }else{
+                const discord = new Crate({
+                server: '1086990232349581434',
+                channel: '1087008199363805345',
+                glyph: ['./img/widgetbot.png', '100%'],
+                username: localStorage.getItem('nickname')
+
+                
+                })
+
+            }
+        }
+            }
+        }
+        
+        
+          </script>
+        </div>
+    </div>
+    <script>
+        if (localStorage.getItem("theme")===null){
+            localStorage.setItem("theme", "light")
+        }
+        document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
+            
+    </script>
+    </body>
+</html>

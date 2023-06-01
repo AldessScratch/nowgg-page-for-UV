@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 1;  
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.sidebar.close{
+    width: 88px;
+}
+
+.sidebar li{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar header .image,
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.sidebar .text,
+.sidebar .icon{
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+.sidebar .text{
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+}
+.sidebar.close .text{
+    opacity: 0;
+}
+
+.sidebar header{
+    position: relative;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+.sidebar header .logo-text{
+    display: flex;
+    flex-direction: column;
+}
+header .image-text .name {
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .image-text .profession{
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+}
+
+.sidebar header .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar header .image img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.sidebar.close .toggle{
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.sidebar .menu{
+    margin-top: 40px;
+}
+
+.sidebar li.search-box{
+    border-radius: 15px;
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.sidebar li.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 15px;
+    transition: var(--tran-05);
+}
+.sidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+
+.sidebar li .hover{
+    background-color: var(--primary-color);
+}
+.sidebar li .hover .icon,
+.sidebar li .hover .text{
+    color: var(--sidebar-color);
+}
+
+
+.sidebar .menu-bar{
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+.menu-bar::-webkit-scrollbar{
+    display: none;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+.sidebar.close ~ .home{
+    left: 78px;
+    height: 100vh;
+    width: calc(100% - 78px);
+}
+.cards {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards .g {
+    height: 150px;
+    width: 330px;
+}
+
+.cards .p {
+    height: 150px;
+    width: 150px;
+}
+
+.cards .card {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.cards .card h2 {
+    margin-left: 18px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #6d6d6d33;
+  	-webkit-box-shadow: 4px 3px 8px 1px #6d6d6d33;
+}
+
+.footer {
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.footer .footer-text {
+    color: var(--text-color);
+    padding-bottom: 20px;
+}
+
+/*backgroud cards for games*/
+
+.cards .narrow {
+    background-image: url("../img/games/narrowone.JPG");
+}
+.cards .deux {
+    background-image: url("../img/games/2048.jpg");
+}
+.cards .bloxd {
+    background-image: url("../img/games/bloxdio.JPG");
+}
+.cards .skkribl {
+    background-image: url("../img/games/scribble.png");
+}
+.cards .ctr {
+    background-image: url("../img/games/cuttherope.png");
+}
+.cards .fruit {
+    background-image: url("../img/games/fruitninja.png");
+}
+.cards .stack {
+    background-image: url("../img/games/stack.png");
+}
+.cards .battle {
+    background-image: url("../img/games/battledudes.png");
+}
+.cards .taming {
+    background-image: url("../img/games/taming.png");
+}
+.cards .paper {
+    background-image: url("../img/games/paper2.png");
+}
+.cards .subway {
+    background-image: url("../img/games/subway.webp");
+}
+.cards .duck {
+    background-image: url("../img/games/ducklings.png");
+}
+.cards .rabbit {
+    background-image: url("../img/games/rabbit.jpg");
+}
+.cards .surf {
+    background-image: url("../img/games/surf.png");
+}
+.cards .stick {
+    background-image: url("../img/games/stickman.png");
+}
+.cards .smash {
+    background-image: url("../img/games/smashkarts.png");
+}
+.cards .yohoho {
+    background-image: url("../img/games/yohoho.jpg");
+}
+.cards .beans {
+    background-image: url("../img/games/lolbeans.png");
+}
+.cards .moto {
+    background-image: url("../img/games/moto3xm.png");
+}
+.cards .jklm {
+    background-image: url("../img/games/jklm.png");
+}
+.cards .school {
+    background-image: url("../img/games/schoolbreak.png");
+}
+.cards .bloons {
+    background-image: url("../img/games/bloonstd4.png");
+}
+.cards .sand {
+    background-image: url("../img/games/sandspiel.JPG");
+}
+.cards .littlealchemy2 {
+    background-image: url("../img/games/littlealchemy.png");
+}
+.cards .drive {
+    background-image: url("../img/games/drivemad.jpg");
+}
+.cards .swerve {
+    background-image: url("../img/games/swerve.JPG");
+}
+
+
+/*backgroud cards for apps */
+
+.cards .ytb {
+    background-image: url("../img/apps/youtube.jpg");
+}
+.cards .tktk {
+    background-image: url("../img/apps/tiktok.png");
+}
+.cards .google {
+    background-image: url("../img/apps/google.png");
+}
+.cards .ds {
+    background-image: url("../img/apps/discord.jpg");
+}
+.cards .qwant {
+    background-image: url("../img/apps/qwant.png");
+}
+.cards .tv {
+    background-image: url("../img/apps/twittch.png");
+}
+.cards .piped {
+    background-image: url("../img/apps/piped.png");
+}
+.cards .cytb {
+    background-image: url("../img/apps/cloud.JPG");
+}
+.cards .reddit {
+    background-image: url("../img/apps/reddit.png");
+}
+.cards .coflix {
+    background-image: url("../img/apps/coflix.png");
+}
+.cards .scratch {
+    background-image: url("../img/apps/scratch.png");
+}
+.cards .turbo {
+    background-image: url("../img/apps/turbowarp.png");
+}
+.cards .replit {
+    background-image: url("../img/apps/replit.png");
+}
+.cards .github {
+    background-image: url("../img/apps/github.png");
+}
+.cards .eve {
+    background-image: url("../img/games/eve.webp");
+}
+.cards .croxy {
+    background-image: url("../img/apps/croxy.png");
+}
+.cards .incognito {
+    background-image: url("../img/apps/incog.png");
+}
+.cards .chatgpt {
+    background-image: url("../img/apps/chatgpt.jpg");
+}
+.cards .now {
+    background-image: url("../img/apps/now.png");
+}
+.cards .krunker {
+    background-image: url("../img/games/krunker.png");
+}
+
+.a #domUrlToOpen {
+    height: 30px;
+    width: 300px;
+}
+
+.a button {
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    background-color: #e7e5e5;
+    border: 0;
+    border-radius: 15px;
+    padding: 7px;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+.a .URL{
+    color: var(--widget-text)
+}
+
+.cards .ecoledirecte {
+    background-image: url("../img/apps/ecoledirecte.png");
+}
+.cards .nosdevoirs {
+    background-image: url("../img/apps/nosdevoirs.png");
+}
+.cards .deepl {
+    background-image: url("../img/apps/deepl.png");
+}
+.cards .trad {
+    background-image: url("../img/apps/trad.png");
+}
+.cards .spotify {
+    background-image: url("../img/apps/spotify.png");
+}
+.cards .koyeb{
+    background-image: url("../img/apps/koyeb.png");
+}
+.cards .diep{
+    background-image: url("../img/games/diep.png");
+}
+.widget{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widget1 {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 210px;
+    width: 90%;
+    border-radius: 25px;
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+
+ .widget1 h2 {
+    padding: 25px;
+    color: white;
+    font-size: 23px;
+    
+ }
+
+ .widget1 h5 {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    color: white;
+    font-size: 23px;
+ }
+ .widget1 h8 {
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+ }
+
+ .widget1 user {
+    padding-top: 25px;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+ }
+
+ .widget1 h8 grade{
+    color: #e63939;
+ }
+
+ .widget1 h3 {
+    padding-left: 25px;
+    color: var(--widget-text);
+    font-size: 15px;
+    font-weight: 400;
+ }
+
+ .back {
+    background-size: cover;
+ }
+
+ .username {
+    margin-top: 30px;
+    display: flex;
+}
+.cards .android{
+    background-image: url("../img/cloud/android.jpg");
+}
+.cards .roblox{
+    background-image: url("../img/cloud/roblox.JPG");
+}
+.cards .stumble{
+    background-image: url("../img/cloud/stumble.jpg");
+}
+.cards .callof{
+    background-image: url("../img/cloud/callof.JPG");
+}
+.cards .minecraft{
+    background-image: url("../img/cloud/minecraft.JPG");
+}
+.cards .render{
+    background-image: url("../img/apps/render.jpg");
+}
+.cards .gitlab{
+    background-image: url("../img/apps/gitlab.png");
+}
+.cards .replit{
+    background-image: url("../img/apps/replit.png");
+}
+.cards .bing{
+    background-image: url("../img/apps/bing.png");
+}
+.cards .number{
+    background-image: url("../img/apps/number.jpg");
+}
+.cards .aptoide{
+    background-image: url("../img/cloud/aptoide.jpg");
+}
+.cards .pubg{
+    background-image: url("../img/cloud/pubg.jpg");
+}
+.cards .block{
+    background-image: url("../img/cloud/block.jpg");
+}
+.cards .gartic{
+    background-image: url("../img/games/gartic.jpg");
+}
+.cards .slither{
+    background-image: url("../img/games/slither.jpg");
+}
+.ngg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+.classif {
+    width: 90%;
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classif h2 {
+    margin-left: 18px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #6d6d6d33;
+  	-webkit-box-shadow: 4px 3px 8px 1px #6d6d6d33;
+}
+.parametre {
+    margin-left: 60px;
+}
+.parametre .reset{
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    color: var(--widget-text);
+    background-color: var(--widget-color);
+    box-shadow: 4px 3px 8px 1px #96969633;
+  	-webkit-box-shadow: 4px 3px 8px 1px #96969633;
+}
+.parametre h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--widget-text);
+ }
+ 
+ .parametre input{
+     width: 500px;
+     border-radius: 20px;
+     padding: 5px;
+     border: 0;
+     box-shadow: 4px 3px 8px 1px #96969633;
+       -webkit-box-shadow: 4px 3px 8px 1px #96969633;
+     margin-right: 5px
+ }
+ .parametre select{
+     width: 300px;
+     border-radius: 20px;
+     padding: 5px;
+     border: 0;
+     box-shadow: 4px 3px 8px 1px #96969633;
+       -webkit-box-shadow: 4px 3px 8px 1px #96969633;
+ }
+.cards .moomoo{
+    background-image: url("../img/games/moomoo.png");
+}
+.cards .among{
+    background-image: url("../img/cloud/among.jpeg");
+}
+.cards .cut{
+    background-image: url("../img/cloud/cut.png");
+}
+.cards .cut2{
+    background-image: url("../img/cloud/cut2.png");
+}
+.cards .fifa{
+    background-image: url("../img/cloud/fifa.jpg");
+}
+.cards .granny{
+    background-image: url("../img/cloud/granny.png");
+}
+.cards .raid{
+    background-image: url("../img/cloud/raid.jpeg");
+}
+.cards .pixel3d{
+    background-image: url("../img/cloud/pixel.jpeg");
+}
+.cards .statesurvi{
+    background-image: url("../img/cloud/state.jpeg");
+}
+.cards .visual{
+    background-image: url("../img/apps/vscode.png");
+}
+.cards .sound{
+    background-image: url("../img/apps/soundcloud.jpg");
+}
+.cards .telegram{
+    background-image: url("../img/apps/telegram.png");
+}
+.cards .gmail{
+    background-image: url("../img/apps/gmail.jpg");
+}
+.cards .analytics{
+    background-image: url("../img/apps/analytics.png");
+}
+.cards .nightflix{
+    background-image: url("../img/apps/nightflixx.png");
+}
+.cards .angry{
+    background-image: url("../img/games/angry.png");
+}
+.cards .stabfish{
+    background-image: url("../img/games/stabfish.png");
+}
+.cards .whatsapp{
+    background-image: url("../img/apps/whatsapp.png");
+}
+.cards .snap{
+    background-image: url("../img/apps/snapchat.png");
+}
+.cards .duckduckgo{
+    background-image: url("../img/apps/duckduckgo.png");
+}
+.cards .aternos{
+    background-image: url("../img/apps/magmanode.png");
+}
+
+
+.iframe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.cards .imgbb{
+    background-image: url("../img/apps/imbgg.png");
+}
+
+.cards .pacman{
+    background-image: url("../img/games/pacman.jpg");
+}
+.cards .singing{
+    background-image: url("../img/cloud/singing.jpg");
+}
+.cards .defence{
+    background-image: url("../img/cloud/defence.png");
+}
+.cards .cookie{
+    background-image: url("../img/cloud/cookie.jpg");
+}
+.cards .vector{
+    background-image: url("../img/cloud/vector.jpg");
+}
+.cards .plague{
+    background-image: url("../img/cloud/plague.jpg");
+}
+.cards .retro{
+    background-image: url("../img/cloud/retro.jpg");
+}
+.cards .animeflix{
+    background-image: url("../img/apps/animeflix.png");
+}
+.cards .speedtest{
+    background-image: url("../img/apps/speedtest.png");
+}
+.cards .outlook{
+    background-image: url("../img/apps/outlook.jpg");
+}
+.cards .cloudfare{
+    background-image: url("../img/apps/cloudfare.jpg");
+}
+.error {
+    margin: 60px;
+    color: var(--widget-text);
+}
+#loading {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #121111;
+    transition: 1s;
+    background-image:url("../img/loading.GIF") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+.cards .movies7{
+    background-image: url("../img/apps/movie7.png");
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: var(--sidebar-color);
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--widget-text);
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms step-start;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }  
+
+.topnav{
+    background-color: var(--sidebar-color);
+    height: 50px;
+    width: 100%;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topnav .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.topnav .left i{
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 30px;
+}
+.topnav .left i.small{
+    font-size: 20px;
+}
+.topnav .left i.refresh{
+    font-size: 25px;
+}
+.topnav img{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.topnav p#appname {
+    margin: 20px;
+    font-size: 20px ;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.topnav .right {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+.topnav .right i{
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 30px;
+}
+.topnav .right i.small{
+    font-size: 20px;
+}
+
+.cards .bitlife{
+    background-image: url("../img/games/bitlife.png");
+}
+.cards .venge{
+    background-image: url("../img/games/venge.jpg");
+}
+.cards .francetv{
+    background-image: url("../img/apps/francetv.png");
+}
+.cards .flappy{
+    background-image: url("../img/games/flappy.jpg");
+}

@@ -1,0 +1,16 @@
+
+:root{
+    --body-color: #181a18;
+    --sidebar-color: #242624;
+    --primary-color: #7cc273;
+    --primary-color-light: #3a3c3a;
+    --toggle-color: #fff;
+    --text-color: #7ac273;
+    --widget-text: #a6dbad;
+    --widget-color: #3b3a3ca8;
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}

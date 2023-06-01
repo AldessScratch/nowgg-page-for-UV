@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="manifest" href="manifest.json">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5ZHFSF72J');
+</script>
+    
+    <title>GetTechno | Mobile Cloud</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.PNG">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">GetTechno 2</span>
+                    <span class="profession">Unblock The WEB</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i onclick="sidebar.classList.toggle('close');" class='bx bx-search icon'></i>
+                    <div class="search">
+                    <form>
+                        <input id="searchInput" class="input-bar" placeholder="Recherchez ici...">
+                    </form>
+                </div>
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="menu.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Accueil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="games.html">
+                            <i class='bx bx-joystick icon' ></i>
+                            <span class="text nav-text">Jeux</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="apps.html">
+                            <i class='bx bxs-grid icon'></i>
+                            <span class="text nav-text">Apps</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cloud.html" class="hover">
+                            <i class='bx bx-cloud icon' ></i>
+                            <span class="text nav-text">Cloud</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tchat.html">
+                            <i class='bx bx-chat icon'></i>
+                            <span class="text nav-text">Tchat</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="bot.html">
+                            <i class='bx bx-bot icon'></i>
+                            <span class="text nav-text">ChatGPT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="info.html">
+                        <i class='bx bx-info-circle icon'></i>
+                        <span class="text nav-text">Infos</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="settings.html">
+                        <i class='bx bx-cog icon' ></i>
+                        <span class="text nav-text">Paramètres</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="calculatrice.html">
+                        <i class='bx bx-exit icon' ></i>
+                        <span class="text nav-text">Calculatrice</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+    </nav>
+    <section class="home">
+        <div class="widget">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
+                <h5>Mobile Cloud</h5>
+                <div class="username">
+                    <h5><i class='bx bx-user'></i></h5>
+                    <h8></i><grade id="grade"></grade><vip id="vip"></vip></h8>
+                    </i><user id="username">Guest</user>
+                    <h5><i class='bx bx-edit' onclick="setusername(); window.location.href = 'menu.html'"></i></h5>
+                </div>
+            </div>
+            
+        </div>
+        <div class="classif">
+            <h2 class="white"><i class='bx bx-store'></i> App Store</h2>
+            <h2 class="white"><i class='bx bx-game'></i> Jeux Cloud</h2>
+            <h2 class="white"><i class='bx bx-cloud'></i> Jeux Cloud Multijoueurs</h2>
+        </div>
+        <div class="cards">
+            <div class="card p android" onclick="openURL('https://now.gg/play/uncube/7074/now');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/android.jpg');localStorage.setItem('appname', 'Android')">
+                <h2 class="white"><i class='bx bx-store'></i> Android</h2>
+            </div>
+            <div class="card p aptoide" onclick="openURL('https://now.gg/play/aptoide/1440/aptoide');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/aptoide.jpg');localStorage.setItem('appname', 'Aptoide')">
+                <h2 class="white"><i class='bx bx-store'></i> Aptoide</h2>
+            </div>
+            <div class="card p among" onclick="openURL('https://now.gg/play/innersloth-llc/4047/among-us');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/among.jpeg');localStorage.setItem('appname', 'Among Us')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Among Us</h2>
+            </div>
+            <div class="card p block" onclick="openURL('https://now.gg/play/blockman-go-studio/8913/blockman-go');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/block.jpg');localStorage.setItem('appname', 'BlockMan Go')">
+                <h2 class="white"><i class='bx bx-cloud'></i> BlockMan Go</h2>
+            </div>
+            <div class="card p callof" onclick="openURL('https://now.gg/play/activision-publishing/7935/call-of-duty');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/callof.JPG');localStorage.setItem('appname', 'Call of Duty')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Call of Duty</h2>
+            </div>
+            <div class="card p fifa" onclick="openURL('https://now.gg/play/electronic-arts/1353/fifa-soccer');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/fifa.jpg');localStorage.setItem('appname', 'FIFA')">
+                <h2 class="white"><i class='bx bx-game'></i> FIFA</h2>
+            </div>
+            <div class="card p granny" onclick="openURL('https://now.gg/play/dvloper/4807/granny');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/granny.png');localStorage.setItem('appname', 'Granny')">
+                <h2 class="white"><i class='bx bx-game'></i> Granny</h2>
+            </div>
+            <div class="card p minecraft" onclick="openURL('https://now.gg/play/mojang/2534/minecraft-trial');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/minecraft.JPG');localStorage.setItem('appname', 'Minecraft Trial')">
+                <h2 class="white"><i class='bx bx-game'></i> Minecraft Trial</h2>
+            </div>
+            <div class="card p pixel3d" onclick="openURL('https://now.gg/play/pixel-gun-3d/2652/pixel-gun');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/pixel.jpeg');localStorage.setItem('appname', 'Pixel Gun 3D')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Pixel Gun 3D</h2>
+            </div>
+            <div class="card p pubg" onclick="openURL('https://now.gg/play/proxima-beta/2609/pubg-mobile-resistance');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/pubg.jpg');localStorage.setItem('appname', 'PUBG')">
+                <h2 class="white"><i class='bx bx-cloud'></i> PUBG</h2>
+            </div>
+            <div class="card p raid" onclick="openURL('https://now.gg/play/plarium/6886/raid-legends');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/raid.jpeg');localStorage.setItem('appname', 'RAID')">
+                <h2 class="white"><i class='bx bx-cloud'></i> RAID</h2>
+            </div>
+            <div class="card p roblox" onclick="openURL('https://now.gg/play/roblox-corporation/5349/roblox');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/roblox.JPG');localStorage.setItem('appname', 'Roblox')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Roblox</h2>
+            </div>
+            <div class="card p stumble" onclick="openURL('https://now.gg/play/kitka-games/7999/stumble-guys');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/stumble.jpg');localStorage.setItem('appname', 'Stumble Guys')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Stumble Guys</h2>
+            </div>
+            <div class="card p vector" onclick="openURL('https://now.gg/play/nekki/4537/vector');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/cloud/vector.jpg');localStorage.setItem('appname', 'Vector')">
+                <h2 class="white"><i class='bx bx-game'></i> Vector</h2>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+    <script src="./uv/uv.bundle.js"></script>
+    <script src="./uv/uv.config.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
+        if (localStorage.getItem("theme")===null){
+            localStorage.setItem("theme", "light")
+        }
+        document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
+        toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+    </script>
+</body>
+</html>

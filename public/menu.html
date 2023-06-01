@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="manifest" href="manifest.json">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5ZHFSF72J');
+</script>
+    
+    <title>GetTechno | Accueil</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.PNG">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">GetTechno 2</span>
+                    <span class="profession">Unblock The WEB</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i onclick="sidebar.classList.toggle('close');" class='bx bx-search icon'></i>
+                    <div class="search">
+                    <form>
+                        <input id="searchInput" class="input-bar" placeholder="Recherchez ici...">
+                    </form>
+                </div>
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link hover">
+                        <a href="menu.html" class="hover">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Accueil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="games.html">
+                            <i class='bx bx-joystick icon' ></i>
+                            <span class="text nav-text">Jeux</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="apps.html">
+                            <i class='bx bxs-grid icon'></i>
+                            <span class="text nav-text">Apps</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cloud.html">
+                            <i class='bx bx-cloud icon' ></i>
+                            <span class="text nav-text">Cloud</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tchat.html">
+                            <i class='bx bx-chat icon'></i>
+                            <span class="text nav-text">Tchat</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./bot.html">
+                            <i class='bx bx-bot icon'></i>
+                            <span class="text nav-text">ChatGPT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                
+                <li class="nav-link">
+                    <a href="info.html">
+                        <i class='bx bx-info-circle icon'></i>
+                        <span class="text nav-text">Infos</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="settings.html">
+                        <i class='bx bx-cog icon' ></i>
+                        <span class="text nav-text">Paramètres</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="calculatrice.html">
+                        <i class='bx bx-exit icon' ></i>
+                        <span class="text nav-text">Sortir</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Accueil</div>
+        <div class="widget">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/light.jpg')">
+                <h5>Bienvenue sur GetTechno</h5>
+                <div class="username">
+                    <icon><i class='bx bx-user'></i></icon>
+                    <h8></i><grade id="grade"></grade></h8>
+                    </i><user id="username">Guest</user>
+                    <icon><i class='bx bx-edit' onclick="setusername(); window.location.href = 'menu.html'"></i></icon>
+                </div>
+            </div>
+            <div class="widget1">
+                <div class="datetime">
+                    <div class="timetext"><i class="bx bx-time"></i><div class="time"></div></div>
+                    <div class="datetext"><div class="date"></div></div>
+                </div>
+            </div>
+            <div class="widgetvideo">
+                <video src="./img/trailer.mp4" muted controls></video>
+            </div>
+            <a href="./info.html"><div class="widget2" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
+                <h2>Changements</h2>
+                <h3>01/06/23 : Vos progrès dans le mobile cloud sont sauvegardés, nouvelle option dans les paramètres et certains jeux réparés</h3>
+                <h3>25/05/23 : Serveur proxy now.gg en US</h3>
+                <h3>24/05/23 : Page iframe amélioré, nouveaux jeux...</h3>
+            </div></a>
+            <div class="widget1 activite">
+                <div class="text5">Reprendre son activité</div>
+                <div class="activity">
+                    <a id="staturl" href=""><div id="image" class="imgcont"></div><div id="appname" class="appname"></div></a>
+                </div>
+                <script>
+                    document.getElementById("image").style="background-image: url('" + localStorage.getItem('image') + "')";
+                    document.getElementById("staturl").href= localStorage.getItem('staturl');
+                    document.getElementById("appname").innerHTML = localStorage.getItem('appname')
+                </script>
+            </div>
+        </div>
+        <br>
+        <div class="footer">
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./uv/uv.bundle.js"></script>
+    <script src="./uv/uv.config.js"></script>
+    <script src="./index.js"></script>
+    <script src="./js/time.js"></script>
+    <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
+        if (localStorage.getItem("theme")===null){
+            localStorage.setItem("theme", "light")
+        }
+        document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
+        toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(() => {
+            loader.style.display = "none";
+      }, 1500);
+
+    </script>
+</body>
+</html>

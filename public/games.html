@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5ZHFSF72J');
+</script>
+    <title>GetTechno | Jeux</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.PNG">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">GetTechno 2</span>
+                    <span class="profession">Unblock The WEB</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i onclick="sidebar.classList.toggle('close');" class='bx bx-search icon'></i>
+                    <div class="search">
+                    <form>
+                        <input id="searchInput" class="input-bar" placeholder="Recherche...">
+                    </form>
+                </div>
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="menu.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Accueil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="games.html" class="hover">
+                            <i class='bx bx-joystick icon' ></i>
+                            <span class="text nav-text">Jeux</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="apps.html">
+                            <i class='bx bxs-grid icon'></i>
+                            <span class="text nav-text">Apps</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cloud.html">
+                            <i class='bx bx-cloud icon' ></i>
+                            <span class="text nav-text">Cloud</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tchat.html">
+                            <i class='bx bx-chat icon'></i>
+                            <span class="text nav-text">Tchat</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./bot.html">
+                            <i class='bx bx-bot icon'></i>
+                            <span class="text nav-text">ChatGPT</span>
+                        </a>
+                    </li>
+                    </ul>
+            </div>
+
+            <div class="bottom-content">
+            
+                <li class="nav-link">
+                    <a href="info.html">
+                        <i class='bx bx-info-circle icon'></i>
+                        <span class="text nav-text">Infos</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="settings.html">
+                        <i class='bx bx-cog icon' ></i>
+                        <span class="text nav-text">Paramètres</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="calculatrice.html">
+                        <i class='bx bx-exit icon' ></i>
+                        <span class="text nav-text">Sortir</span>
+                    </a>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="widget">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
+                <h5>Jeux</h5>
+                <div class="username">
+                    <h5><i class='bx bx-user'></i></h5>
+                    <h8></i><grade id="grade"></grade></h8>
+                    </i><user id="username">Guest</user>
+                    <h5><i class='bx bx-edit' onclick="setusername(); window.location.href = 'menu.html'"></i></h5>
+                </div>
+            </div>
+            
+        </div>
+        <div class="classif">
+            <h2 class="white"><i class='bx bx-game'></i> Jeux HTML5</h2>
+            <h2 class="white"><i class='bx bx-joystick'></i> Jeux Online</h2>
+            <h2 class="white"><i class='bx bx-cloud'></i> Jeux Multijoueurs</h2>
+        </div>
+        <div class="cards">
+            <a href="./iframe.html"><div class="card p deux" onclick="localStorage.setItem('iframeurl', 'games/2048/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/2048.jpg');localStorage.setItem('appname', '2048')">
+                <h2 class="black"><i class='bx bx-game'></i> 2048</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p angry" onclick="localStorage.setItem('iframeurl', 'https://gettechnoangrybirdshtml5.netlify.app');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/angry.png');localStorage.setItem('appname', 'Angry Birds')">
+                <h2 class="white"><i class='bx bx-game'></i> Angry Birds</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p battle" onclick="localStorage.setItem('iframeurl', 'https://battledudes.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/battledudes.png');localStorage.setItem('appname', 'BattleDudes')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Battle Dudes</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p bitlife" onclick="localStorage.setItem('iframeurl', 'games/bitlife/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/bitlife.png');localStorage.setItem('appname', 'BitLife')">
+                <h2 class="white"><i class='bx bx-game'></i> BitLife</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p bloons" onclick="localStorage.setItem('iframeurl', 'games/btd4/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/bloonstd4.png');localStorage.setItem('appname', 'Bloons TD 4')">
+                <h2 class="white"><i class='bx bx-game'></i> Bloons TD 4</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p bloxd" onclick="localStorage.setItem('iframeurl', 'https://bloxd.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/bloxdio.JPG');localStorage.setItem('appname', 'Bloxd')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Bloxd</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p drive" onclick="localStorage.setItem('iframeurl', 'games/drive-mad/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/drivemad.jpg');localStorage.setItem('appname', 'Drive Mad')">
+                <h2 class="white"><i class='bx bx-game'></i> Drive Mad</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p duck" onclick="localStorage.setItem('iframeurl', 'https://ducklings.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/ducklings.png');localStorage.setItem('appname', 'Ducklings')">
+                <h2 class="black"><i class='bx bx-joystick'></i> Ducklings</h2>
+            </div></a>
+            <div class="card p eve" onclick="openURL('https://ev.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/eve.webp');localStorage.setItem('appname', 'Ev')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Ev</h2>
+            </div>
+            <a href="./iframe.html"><div class="card p flappy" onclick="localStorage.setItem('iframeurl', 'https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/flappy.jpg');localStorage.setItem('appname', 'Flappy birds')">
+                <h2 class="white"><i class='bx bx-game'></i> Flappy birds</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p gartic" onclick="localStorage.setItem('iframeurl', 'https://gartic.io/');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/gartic.jpg');localStorage.setItem('appname', 'Gartic')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Gartic</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p jklm" onclick="localStorage.setItem('iframeurl', 'https://jklm.fun');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/jklm.png');localStorage.setItem('appname', 'Jklm')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Jklm</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p littlealchemy2" onclick="localStorage.setItem('iframeurl', 'https://littlealchemy2.com');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/littlealchemy.png');localStorage.setItem('appname', 'Little Alchemy 2')">
+                <h2 class="white"><i class='bx bx-joystick'></i> Little Alchemy 2</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p beans" onclick="localStorage.setItem('iframeurl', 'https://lolbeans.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/lolbeans.png');localStorage.setItem('appname', 'LolBeans')">
+                <h2 class="white"><i class='bx bx-cloud'></i> LolBeans</h2>
+            </div></a>
+            <div class="card p moomoo" onclick="openURL('https://moomoo.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/moomoo.png');localStorage.setItem('appname', 'Moomoo')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Moomoo</h2>
+            </div>
+            <a href="./iframe.html"><div class="card p moto"  onclick="localStorage.setItem('iframeurl', 'games/motox3m/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/moto3xm.png');localStorage.setItem('appname', 'Moto 3XM')">
+                <h2 class="white"><i class='bx bx-game'></i> Moto 3XM</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p narrow" onclick="localStorage.setItem('iframeurl', 'https://narrow.one');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/narrowone.JPG');localStorage.setItem('appname', 'Narrow One')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Narrow One</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p paper" onclick="localStorage.setItem('iframeurl', './games/paperio2/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/paper2.png');localStorage.setItem('appname', 'Paper 2')">
+                <h2 class="black"><i class='bx bx-cloud'></i> Paper 2</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p sand" onclick="localStorage.setItem('iframeurl', 'https://sandspiel.club');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/sandspiel.JPG');localStorage.setItem('appname', 'Sandspiel')">
+                <h2 class="white"><i class='bx bx-joystick'></i> Sandspiel</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p school" onclick="localStorage.setItem('iframeurl', 'https://schoolbreak.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/schoolbreak.png');localStorage.setItem('appname', 'SchoolBreak')">
+                <h2 class="white"><i class='bx bx-cloud'></i> School
+                    Break</h2>
+            </div></a>
+            <div class="card p skkribl" onclick="openURL('https://skribbl.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/scribble.png');localStorage.setItem('appname', 'Skribbl')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Skribbl</h2>
+            </div>
+            <div class="card p slither" onclick="openURL('https://slither.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/slither.jpg');localStorage.setItem('appname', 'Slither')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Slither</h2>
+            </div>
+            <a href="./iframe.html"><div class="card p smash" onclick="localStorage.setItem('iframeurl', 'games/smashkarts/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/smashkarts.png');localStorage.setItem('appname', 'Smash Karts')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Smash
+                    Karts</h2>
+            </div></a> 
+            <a href="./iframe.html"><div class="card p stabfish" onclick="localStorage.setItem('iframeurl', 'https://stabfish.io/');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/stabfish.png');localStorage.setItem('appname', 'Stabfish')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Stabfish</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p stack" onclick="localStorage.setItem('iframeurl', 'games/stack/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/stack.png');localStorage.setItem('appname', 'Stack')">
+                <h2 class="white"><i class='bx bx-game'></i> Stack</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p stick" onclick="localStorage.setItem('iframeurl', 'games/Stickman-Hook-main/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/stickman.png');localStorage.setItem('appname', 'Stickman Hook')">
+                <h2 class="white"><i class='bx bx-game'></i> Stickman</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p subway" onclick="localStorage.setItem('iframeurl', 'games/subway-surfers/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/subway.webp');localStorage.setItem('appname', 'Subway Surfers')">
+                <h2 class="white"><i class='bx bx-game'></i> Subway Surfers</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p surf" onclick="localStorage.setItem('iframeurl', 'games/ms-edge-letssurf-main/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/surf.png');localStorage.setItem('appname', 'Surf')">
+                <h2 class="white"><i class='bx bx-game'></i> Surf</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p swerve" onclick="localStorage.setItem('iframeurl', 'https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/VecAxR3e/index.html');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/swerve.JPG');localStorage.setItem('appname', 'Swerve')">
+                <h2 class="white"><i class='bx bx-game'></i> Swerve</h2>
+            </div></a>
+            <a href="https://taming.io"><div class="card p taming" onclick="localStorage.setItem('iframeurl', 'https://taming.io');localStorage.setItem('staturl', 'https://taming.io');localStorage.setItem('image', './img/games/taming.png');localStorage.setItem('appname', 'Taming')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Taming</h2>
+            </div></a>
+            <a href="./iframe.html"><div class="card p venge" onclick="localStorage.setItem('iframeurl', 'https://venge.io/');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/venge.jpg');localStorage.setItem('appname', 'Venge')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Venge</h2>
+            </div></a>
+            <div class="card p yohoho" onclick="openURL('https://yohoho.io');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/games/yohoho.jpg');localStorage.setItem('appname', 'Yohoho')">
+                <h2 class="white"><i class='bx bx-cloud'></i> Yohoho</h2>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023 3kh0 W</div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./uv/uv.bundle.js"></script>
+    <script src="./uv/uv.config.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
+        if (localStorage.getItem("theme")===null){
+            localStorage.setItem("theme", "light")
+        }
+        document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
+        toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+    </script>
+</body>
+</html>

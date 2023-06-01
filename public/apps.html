@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" id="themestyle" href="css/light.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZHFSF72J"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5ZHFSF72J');
+</script>
+    <title>GetTechno | Apps</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.PNG">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">GetTechno 2</span>
+                    <span class="profession">Unblock The WEB</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i onclick="sidebar.classList.toggle('close');" class='bx bx-search icon'></i>
+                    <div class="search">
+                    <form>
+                        <input id="searchInput" class="input-bar" placeholder="Recherche...">
+                    </form>
+                </div>
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="menu.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Accueil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="games.html">
+                            <i class='bx bx-joystick icon' ></i>
+                            <span class="text nav-text">Jeux</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="apps.html" class="hover">
+                            <i class='bx bxs-grid icon'></i>
+                            <span class="text nav-text">Apps</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cloud.html">
+                            <i class='bx bx-cloud icon' ></i>
+                            <span class="text nav-text">Cloud</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tchat.html">
+                            <i class='bx bx-chat icon'></i>
+                            <span class="text nav-text">Tchat</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./bot.html">
+                            <i class='bx bx-bot icon'></i>
+                            <span class="text nav-text">ChatGPT</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="info.html">
+                        <i class='bx bx-info-circle icon'></i>
+                        <span class="text nav-text">Infos</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="settings.html">
+                        <i class='bx bx-cog icon' ></i>
+                        <span class="text nav-text">Paramètres</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="calculatrice.html">
+                        <i class='bx bx-exit icon' ></i>
+                        <span class="text nav-text">Sortir</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="widget">
+            <div class="widget1 back" id="stylebg" style="background-image: url('./img/bg/1.jpg')">
+                <h5>Apps</h5>
+                <div class="username">
+                    <h5><i class='bx bx-user'></i></h5>
+                    <h8></i><grade id="grade"></grade></h8>
+                    </i><user id="username">Guest</user>
+                    <h5><i class='bx bx-edit' onclick="setusername(); window.location.href = 'menu.html'"></i></h5>
+                </div>
+            </div>
+            
+        </div>
+        <div class="classif">
+            <h2 class="white"><i class='bx bx-search'></i> Moteur de recherche</h2>
+            <h2 class="white"><i class='bx bx-video'></i> Réseaux sociaux</h2>
+            <h2 class="white"><i class='bx bxl-twitch'></i> Streaming</h2>
+            <h2 class="white"><i class='bx bxl-visual-studio'></i> Dev / Code</h2>
+            <h2 class="white"><i class='bx bxs-grid'></i> Autres</h2>
+        </div>
+        <div class="cards">
+            <div class="cards">
+                <a href="./iframe.html"><div class="card p animeflix" onclick="localStorage.setItem('iframeurl', 'https://animeflix.live');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/apps/animeflix.png');localStorage.setItem('appname', 'AnimeFlix')">
+                    <h2 class="white"><i class='bx bxl-twitch'></i> AnimeFlix</h2>
+                </div></a>
+                <a href="https://bing.com"><div class="card p bing" onclick="localStorage.setItem('staturl', 'https://bing.com');localStorage.setItem('image', './img/apps/bing.png');localStorage.setItem('appname', 'Bing')">
+                    <h2 class="white"><i class='bx bx-search'></i> Bing</h2>
+                </div></a>
+                <a href="https://tube.cadence.moe"><div class="card p cytb" onclick="localStorage.setItem('staturl', 'https://tube.cadence.moe');localStorage.setItem('image', './img/apps/cloud.JPG');localStorage.setItem('appname', 'CloudTube')">
+                    <h2 class="white"><i class='bx bx-video'></i> Cloud Tube</h2>
+                </div></a>
+                <a href="./iframe.html"><div class="card p coflix" onclick="localStorage.setItem('iframeurl', 'https://coflix.cx');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/apps/coflix.png');localStorage.setItem('appname', 'Coflix')">
+                    <h2 class="white"><i class='bx bxl-twitch'></i> Coflix</h2>
+                </div></a>
+                <a href="http://discord.com/login"><div class="card p ds" onclick="localStorage.setItem('staturl', 'http://discord.com/login');localStorage.setItem('image', './img/apps/discord.jpg');localStorage.setItem('appname', 'Discord')">
+                    <h2 class="white"><i class='bx bx-video'></i> Discord</h2>
+                </div></a>
+                <a href="http://duckduckgo.com"><div class="card p duckduckgo" onclick="localStorage.setItem('staturl', 'https://duckduckgo.com');localStorage.setItem('image', './img/apps/duckduckgo.png');localStorage.setItem('appname', 'DuckDuck Go')">
+                    <h2 class="white"><i class='bx bx-search'></i> DuckDuck Go</h2>
+                </div></a>
+                <a href="https://falixnodes.net"><div class="card p aternos" onclick="localStorage.setItem('staturl', 'https://falixnodes.net');localStorage.setItem('image', './img/apps/magmanode.png');localStorage.setItem('appname', 'FalixNodes')"> 
+                    <h2 class="white"><i class='bx bxs-grid'></i> FalixNodes</h2>
+                </div></a>
+                <a href="https://france.tv"><div class="card p francetv" onclick="localStorage.setItem('staturl', 'https://france.tv');localStorage.setItem('image', './img/apps/francetv.png');localStorage.setItem('appname', 'FranceTV')">
+                    <h2 class="white"><i class='bx bxl-twitch'></i> France TV</h2>
+                </div></a>
+                <a href="http://google.com"><div class="card p google" onclick="localStorage.setItem('staturl', 'https://google.com');localStorage.setItem('image', './img/apps/google.png');localStorage.setItem('appname', 'Google')">
+                    <h2 class="white"><i class='bx bx-search'></i> Google</h2>
+                </div></a>
+                <a href="https://mail.google.com/"><div class="card p gmail" onclick="localStorage.setItem('staturl', 'https://mail.google.com');localStorage.setItem('image', './img/apps/gmail.jpg');localStorage.setItem('appname', 'Gmail')"> 
+                    <h2 class="white"><i class='bx bxs-grid'></i> Gmail</h2>
+                </div></a>
+                <a href="https://imgbb.com"><div class="card p imgbb" onclick="localStorage.setItem('staturl', 'https://imgbb.com');localStorage.setItem('image', './img/apps/imbgg.png');localStorage.setItem('appname', 'ImgBB')">
+                    <h2 class="white"><i class='bx bxs-grid'></i> ImgBB</h2>
+                </div></a>
+                <a href="https://movies7.to"><div class="card p movies7" onclick="localStorage.setItem('staturl', 'https://movies7.to');localStorage.setItem('image', './img/apps/movie7.png');localStorage.setItem('appname', 'Movies7')">
+                    <h2 class="white"><i class='bx bxl-twitch'></i> Movies7</h2>
+                </div></a>
+                <a href="http://nightflix.pro"><div class="card p nightflix" onclick="localStorage.setItem('staturl', 'http://nightflix.pro');localStorage.setItem('image', './img/apps/nightflixx.png');localStorage.setItem('appname', 'NightFlix')">
+                    <h2 class="white"><i class='bx bxl-twitch'></i> Nightflix</h2>
+                </div></a> 
+                <a href="https://nosdevoirs.fr"><div class="card p nosdevoirs" onclick="localStorage.setItem('staturl', 'https://nosdevoirs.fr');localStorage.setItem('image', './img/apps/nosdevoirs.png');localStorage.setItem('appname', 'Nosdevoirs')">
+                    <h2 class="white"><i class='bx bxs-grid'></i> Nos Devoirs</h2>
+                </div></a>
+                <a href="https://outlook.live.com"><div class="card p outlook" onclick="localStorage.setItem('staturl', 'https://outlook.live.com');localStorage.setItem('image', './img/apps/outlook.jpg');localStorage.setItem('appname', 'Outlook')"> 
+                    <h2 class="white"><i class='bx bxs-grid'></i> Outlook</h2>
+                </div></a>
+                <a href="https://il.ax"><div class="card p piped" onclick="localStorage.setItem('staturl', 'https://il.ax');localStorage.setItem('image', './img/apps/piped.png');localStorage.setItem('appname', 'Piped')">
+                    <h2 class="white"><i class='bx bx-video'></i> Piped</h2>
+                </div></a>
+                <a href="https://qwant.com"><div class="card p qwant" onclick="localStorage.setItem('staturl', 'https://qwant.com');localStorage.setItem('image', './img/apps/qwant.png');localStorage.setItem('appname', 'Qwant')">
+                    <h2 class="white"><i class='bx bx-search'></i> Qwant</h2>
+                </div></a>
+                <a href="https://reddit.com"><div class="card p reddit" onclick="localStorage.setItem('staturl', 'https://reddit.com');localStorage.setItem('image', './img/apps/reddit.png');localStorage.setItem('appname', 'Reddit')">
+                    <h2 class="white"><i class='bx bx-video'></i> Reddit</h2>
+                </div></a>
+                <a href="https://scratch.mit.edu"><div class="card p scratch" onclick="localStorage.setItem('staturl', 'https://scratch.mit.edu');localStorage.setItem('image', './img/apps/scratch.png');localStorage.setItem('appname', 'Scratch')">
+                    <h2 class="white"><i class='bx bxl-visual-studio'></i> Scratch</h2>
+                </div></a>
+                <a href="https://www.speedtest.net"><div class="card p speedtest" onclick="localStorage.setItem('staturl', 'https://www.speedtest.net');localStorage.setItem('image', './img/apps/speedtest.png');localStorage.setItem('appname', 'Speedtest')"> 
+                    <h2 class="white"><i class='bx bxs-grid'></i> Speedtest</h2>
+                </div></a>
+                <a href="https://spotify.com"><div class="card p spotify" onclick="localStorage.setItem('staturl', 'https://spotify.com');localStorage.setItem('image', './img/apps/spotify.png');localStorage.setItem('appname', 'Spotify')">
+                    <h2 class="white"><i class='bx bxl-twitch'></i> Spotify</h2>
+                </div></a>
+                <a href="https://soundcloud.com/discover"><div class="card p sound" onclick="localStorage.setItem('staturl', 'https://soundcloud.com/discover');localStorage.setItem('image', './img/apps/soundcloud.jpg');localStorage.setItem('appname', 'SoundCloud')"> 
+                    <h2 class="white"><i class='bx bxl-twitch'></i> Sound Cloud</h2>
+                </div></a>
+                <a href="https://turbowarp.org"><div class="card p turbo" onclick="localStorage.setItem('staturl', 'https://turbowarp.org');localStorage.setItem('image', './img/apps/turbowarp.png');localStorage.setItem('appname', 'Turbowarp')">
+                    <h2 class="white"><i class='bx bxl-visual-studio'></i> Turbowarp</h2>
+                </div></a>
+                <a href="https://twitch.tv"><div class="card p tv" onclick="localStorage.setItem('staturl', 'https://twitch.tv');localStorage.setItem('image', './img/apps/twittch.png');localStorage.setItem('appname', 'Twitch')">
+                    <h2 class="white"><i class='bx bxl-twitch'></i> Twitch</h2>
+                </div></a>
+                <a href="https://web.whatsapp.com"><div class="card p whatsapp" onclick="localStorage.setItem('staturl', 'https://web.whatsapp.com');localStorage.setItem('image', './img/apps/whatsapp.png');localStorage.setItem('appname', 'Whatsapp')">
+                    <h2 class="white"><i class='bx bx-video'></i> Whatsapp</h2>
+                </div></a>
+                <div class="card p ytb" onclick="openURL('https://www.youtube.com/?hl=FR&gl=FR');localStorage.setItem('staturl', './iframe.html');localStorage.setItem('image', './img/apps/youtube.jpg');localStorage.setItem('appname', 'Youtube')">
+                    <h2 class="white"><i class='bx bx-video'></i> YouTube</h2>
+                </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">GetTechno-V2/main &copy; GetTechno 2023</div>
+        </div>
+    </section>
+    <script src="./uv/uv.bundle.js"></script>
+    <script src="./uv/uv.config.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        document.getElementById("stylebg").style="background-image: url('./img/bg/" + localStorage.getItem('theme') + ".jpg')"
+
+        if (localStorage.getItem("theme")===null){
+            localStorage.setItem("theme", "light")
+        }
+        document.getElementById("themestyle").setAttribute("href", `css/${localStorage.getItem("theme")}.css`);
+        toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+})
+
+    </script>
+</body>
+</html>
