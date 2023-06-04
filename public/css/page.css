@@ -880,3 +880,13 @@ header .image-text .profession{
 .cards .flappy{
     background-image: url("../img/games/flappy.jpg");
 }
+.cards .rocket{
+    background-image: url("../img/cloud/rlss.png");
+}
+.cards .cookie{
+    background-image: url("../img/cloud/cookie.png");
+}
+.cards .pop{
+    background-image: url("../img/cloud/pop.png");
+}
+
